@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+        @font-face {
+			font-family: Calina Regular;
+			src: url('https://assets.zyrosite.com/A85D79Zw2bcZMGKK/Calina Regular.woff2') format('woff2');
+			font-display: swap;
+		}
     </style>
 </head>
 <body>
@@ -20,12 +25,14 @@
         </nav>
     </header>
     <main class="page">
-        <section>
-            <p><span class="special-font">Hi,</span><img src="/assets/gif/welcome.gif"></p>
-            <h1>I'm Vinicius Piotto</h1>
-            <h2>Software Engineer | Backend Developer | Golang | 1x AWS Certification </h2>
-            <p>Building scalable solutions and innovative architectures by leveraging modern technologies, with a focus on delivering high-quality software.</p>
+        <section class="flex g30 start p100 column">
+            <p class="flex center container-welcome"><span class="special-font">Hi,</span><img class="welcome-gif" src="/assets/gif/welcome.gif"></p>
+            <div>
+                <h1 class="name f14">I'm Vinicius Piotto</h1>
+                <h2 class="word-keys f14">Software Engineer | Backend Developer | Golang | 1x AWS Certification </h2>
+            </div>
+            <p class="person-description">Building scalable solutions and innovative architectures by leveraging modern technologies, with a focus on delivering high-quality software.</p>
         </section>
     </main>
-</body>
+</body>ontainer-welcome
 </html>
