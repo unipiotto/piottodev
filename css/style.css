@@ -1,0 +1,99 @@
+:root {
+    --color-primary-light: #ebe4ff;
+    --color-light: #fff;
+    --color-primary-dark: #1d1e20;
+    --color-gray: #727586;
+    --font-primary: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a, img, span, button {
+    display: block;
+}
+
+a {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+html {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    color: var(--color-primary-dark);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* COMMON STYLES */
+.flex {
+    display: flex;
+}
+
+.center {
+    align-items: center;
+}
+
+.p10 {
+    padding: 10px 0;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+/* NAVIGATION */
+.fixed-block {
+    position: sticky;
+    top: 0;
+}
+
+.container-header {
+    background-color: #000;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 100%;
+}
+
+.container-nav {
+    gap: 10px;
+}
+
+.container-nav > a {
+    color: var(--color-light);
+}
+
+/* HOME PAGE */
+.special-font {
+    font-family: Calina Regular;
+    font-size: 100px;
+    font-weight: 400;
+}
