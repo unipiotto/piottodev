@@ -73,6 +73,10 @@ html {
     padding: 100px 0 0 0;
 }
 
+.pb10 {
+    margin-bottom: 10px;
+}
+
 .g30 {
     gap: 30px;
 }
@@ -141,4 +145,31 @@ html {
     width: 550px;
     font-size: 30px;
     font-weight: 300;
+}
+
+/* WORK PAGE */
+.line {
+    border: 2px solid var(--color-gray);
+    width: 100%;
+}
+
+.work-container {
+    gap: 20px;
+
+}
+
+.work-container > div {
+    width: 250px;
+}
+
+.work-container > div > h3 {
+    color: var(--color-dark);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.work-container > div > p, .roles > li {
+    color: var(--color-primary-dark);
+    font-weight: 400;
+    font-size: 14px;
 }
