@@ -5,38 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piotto.dev</title>
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-        @font-face {
-			font-family: Calina Regular;
-			src: url('https://assets.zyrosite.com/A85D79Zw2bcZMGKK/Calina Regular.woff2') format('woff2');
-			font-display: swap;
-		}
-    </style>
 </head>
 <body>
-    <header class="fixed-block container-header flex p10 center">
-        <a href="#">
+    <header class="fixed-block container-header flex space-around p10 center">
+        <a href="#home">
             <img class="logo" src="/assets/icon/piottodev.png">
         </a>
         <nav class="flex container-nav f14">
-            <a href="#">About me</a>
-            <a href="#">Projects</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#text">Text</a>
+            <a href="#books">Books</a>
+            <a href="#work">Work</a>
         </nav>
     </header>
     <main class="page">
-        <section class="flex g30 start p100 column">
+        <section id="home" class="flex g30 start m100 column">
             <p class="flex center container-welcome"><span class="special-font">Hi,</span><img class="welcome-gif" src="/assets/gif/welcome.gif"></p>
             <div>
                 <h1 class="name f14">I'm Vinicius Piotto</h1>
-                <h2 class="word-keys f14">Software Engineer | Backend Developer | Golang | 1x AWS Certification </h2>
+                <h2 class="word-keys f14">Software Engineer | Passionate about technology | 1x AWS Certification </h2>
             </div>
-            <p class="person-description">Building scalable solutions and innovative architectures by leveraging modern technologies, with a focus on delivering high-quality software.</p>
+            <p class="person-description">Get to know a bit more about me!</p>
         </section>
-        <section class="flex center column p100">
-            <h2 class="center special-font">Work</h2>
+        <section id="hobbies" class="flex center column m100">
+            <h2 class="special-font">Hobbies</h2>
             <hr class="line">
-            <div class="flex p100 work-container">
+            <ul class="m100 grid-container">
+                <li class="grid-item"><img src="assets/hobbies/anime.png" alt="Black Clover"></li>
+                <li class="grid-item"><img src="assets/hobbies/cook.png" alt="Cook food"></li>
+                <li class="grid-item"><img src="assets/hobbies/film.png" alt="Joker film"></li>
+                <li class="grid-item"><img src="assets/hobbies/game.png" alt="Mario Kart"></li>
+                <li class="grid-item"><img src="assets/hobbies/gym.png" alt="Halter"></li>
+            </ul>
+        </section>
+        <section id="text" class="flex center column m100">
+            <h2 class="special-font">Favorite Text</h2>
+            <hr class="line">
+            <p class="m100">"Every great new idea faced opposition; every groundbreaking invention was met with rejection. The first engine was ridiculed, the airplane deemed impossible, the mechanical loom was seen as cruel, and anesthesia was considered sinful. Yet those with vision and determination pressed on. They fought, suffered, and paid a high price. But, in the end, they triumphed."</p>
+            <p>Roark, Howard</p>
+        </section>
+        <section id="books" class="flex center column m100">
+            <h2 class="special-font">Books read</h2>
+            <hr class="line">
+            <ul class="m100 grid-container">
+                <li class="grid-item"><img src="assets/books/book1.jpg" alt="Imagem 1"></li>
+                <li class="grid-item"><img src="assets/books/book2.jpg" alt="assets/books/book 2"></li>
+                <li class="grid-item"><img src="assets/books/book3.jpg" alt="assets/books/book 3"></li>
+                <li class="grid-item"><img src="assets/books/book4.jpg" alt="assets/books/book 4"></li>
+                <li class="grid-item"><img src="assets/books/book5.jpg" alt="book 5"></li>
+            </ul>
+        </section>
+        <section id="work" class="flex center column m100">
+            <h2 class="special-font">Work</h2>
+            <hr class="line">
+            <div class="flex m100 work-container">
                 <div>
                     <h3>NTI</h3>
                     <p>The Information Technology Center at the Federal University of Alfenas (UNIFAL) is responsible for developing new functionalities, maintaining, and refactoring essential academic systems, such as the academic management system and academic Moodle.</p>
@@ -56,5 +78,13 @@
             </div>
         </section>
     </main>
-</body>ontainer-welcome
+    <footer class="container-footer space-around flex m100 center f14">
+        <ul class="flex person-links f12">
+            <li><a target="_blank" href="https://www.linkedin.com/in/viniciushpiotto/">LINKEDIN</a></li>
+            <p>/</p>
+            <li><a target="_blank" href="https://github.com/unipiotto">GITHUB</a></li>
+        </ul>
+        <address class="signature">Made by Vinicius Piotto - 2024</address>
+    </footer>
+</body>
 </html>

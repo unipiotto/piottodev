@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@font-face {
+    font-family: Calina Regular;
+    src: url('https://assets.zyrosite.com/A85D79Zw2bcZMGKK/Calina Regular.woff2') format('woff2');
+    font-display: swap;
+}
+
 :root {
     --color-light: #fff;
     --color-dark: #000;
@@ -57,6 +64,10 @@ html {
     justify-content: flex-start;
 }
 
+.space-around {
+    justify-content: space-around;
+}
+
 .column {
     flex-direction: column;
 }
@@ -69,8 +80,8 @@ html {
     padding: 10px 0;
 }
 
-.p100 {
-    padding: 100px 0 0 0;
+.m100{
+    margin-top: 100px;
 }
 
 .pb10 {
@@ -97,7 +108,6 @@ html {
 
 .container-header {
     background-color: var(--color-dark);
-    justify-content: space-around;
 }
 
 .logo {
@@ -147,6 +157,25 @@ html {
     font-weight: 300;
 }
 
+/* BOOKS PAGE */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item img {
+    max-width: 100%; 
+    height: auto;
+}
+
 /* WORK PAGE */
 .line {
     border: 2px solid var(--color-gray);
@@ -172,4 +201,27 @@ html {
     color: var(--color-primary-dark);
     font-weight: 400;
     font-size: 14px;
+}
+
+/* FOOTER */
+.container-footer {
+    background-color: var(--color-primary-dark);
+    padding: 20px 0;
+}
+
+.person-links {
+    color: var(--color-primary-light);
+    gap: 10px;
+}
+
+.person-links > li > a {
+    color: var(--color-primary-light);
+}
+
+.person-links > li > a:hover {
+    color: var(--color-gray);
+}
+
+.signature {
+    color: var(--color-gray);
 }
